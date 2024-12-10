@@ -1053,6 +1053,8 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+
   }
 
   .column-niveles h3 {
@@ -1067,7 +1069,12 @@ footer {
     align-items: center;
     margin-bottom: 15px;
     line-height: 1.5; /* Mantener coherencia con el texto */
-  }
+    text-align: center;
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
 
 
@@ -1101,9 +1108,52 @@ footer {
 
   .text-frase {
     font-size: 18px;
+   
     color: #000000;
     margin-bottom: 15px;
     font-weight: 500;
     width: 400px;
 
   }
+
+
+
+
+  .container-tec {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.main-text-tec {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    
+}
+
+.columns-tec {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    font-weight: bold;
+}
+
+.column-tec {
+    flex: 1 1 calc(50% - 40px); /* Cada columna ocupa el 50% menos los márgenes */
+    max-width: 400px;
+    min-width: 280px; /* Para mantener un buen diseño en pantallas pequeñas */
+    text-align: center;
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .column-tec {
+        flex: 1 1 100%; /* En pantallas pequeñas, cada columna ocupa el 100% */
+    }
+}
