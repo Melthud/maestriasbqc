@@ -393,7 +393,7 @@ body {
       rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
       rgba(0, 0, 0, 0.09) 0px 32px 16px;
   }
-
+  
 
 .card img{
     width: 100%;
@@ -411,7 +411,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* Cuatro columnas iguales */
     gap: 20px; /* Espacio entre secciones */
-    background-color: #333;
+    background-color: #000000;
     color: white;
     padding: 20px;
     text-align: center;
@@ -669,7 +669,7 @@ footer {
 .aviso{
     text-align: center;
     padding: 5%;
-    background-color: #ff9300;
+    background-color: #000000;
     font-weight: bold;
     color: white;
 }
@@ -710,11 +710,11 @@ footer {
     text-align: left;
     flex: 1;
     text-align: center;
-   
+  
 }
 
 .image-content-parent img {
-    width: 100%;
+    width: 60px;
     max-width: 200px; /* Tamaño máximo para la imagen */
     height: auto;
     border-radius: 8px;
@@ -741,15 +741,34 @@ footer {
 }
 
 
+  
+  .center-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #ff9300;;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .center-button:hover {
+    background-color: #b26902;;
+  }
+
 
 .datos-content{
     padding-top: 2rem;
-    background-color: #ff9300; /* Color de fondo para la sección */
+    background-color: #000000; /* Color de fondo para la sección */
     text-align: center;
+    padding-bottom: 2rem;
 }
 
 .datos-content h2{
-    color: white;
+    
+    color: #ff9300;;
 }
 
 .image-text-section {
