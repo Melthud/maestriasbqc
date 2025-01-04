@@ -382,6 +382,73 @@
         </div>
     </section>
 
+
+
+    <section class="faq-section" style="padding-top: 50px;">
+      <h1 class="main-title-requisitos">Preguntas Frecuentes</h1>
+      <div class="faq">
+        <div class="faq-item">
+          <button class="faq-question">¿Por qué estudiar esta maestría?</button>
+          <div class="faq-answer">
+            La Maestría en Herramientas de Seguridad Industrial y Salud en el Trabajo representa una inversión estratégica para quienes buscan una carrera profesional robusta y con impacto significativo. En Ecuador, donde los sectores industriales y extractivos son fundamentales para la economía, contar con expertos en seguridad y salud laboral es crucial para garantizar operaciones seguras, sostenibles y en cumplimiento con las normativas vigentes
+            Esta maestría ofrece:
+            <ul>
+              <li><strong>Especialización en un campo estratégico: </strong>Los sectores de minería, petróleo, construcción y manufactura demandan profesionales altamente capacitados en seguridad industrial y salud ocupacional.</li>
+              <li><strong>Cumplimiento normativo: </strong>Ecuador cuenta con regulaciones específicas que exigen personal capacitado para prevenir riesgos laborales y garantizar el bienestar de los trabajadores.</li>
+              <li><strong>Oportunidades de crecimiento: </strong>Una formación avanzada en esta área te posicionará como un candidato ideal para roles de liderazgo.</li>
+              <li><strong>Contribución social y organizacional: </strong>Los egresados de esta maestría impactan directamente en la calidad de vida de los trabajadores y la sostenibilidad empresarial.</li>
+              <li><strong>Estabilidad y mejora económica: </strong>Las empresas valoran a profesionales que minimizan riesgos, lo que se traduce en contratos sólidos y mejores remuneraciones.</li>
+            </ul> 
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">¿Para qué estudiar esta maestría?</button>
+          <div class="faq-answer">
+              <ul>
+                  <li>Diseñar e implementar herramientas tecnológicas avanzadas para la gestión de seguridad y salud en el trabajo.</li>
+                  <li>Garantizar el cumplimiento de normativas nacionales e internacionales como ISO 45001 y OSHA.</li>
+                  <li>Identificar y gestionar riesgos laborales mediante técnicas y herramientas modernas.</li>
+                  <li>Liderar proyectos de prevención, mitigación y respuesta a emergencias en diversos sectores productivos.</li>
+                  <li>Promover el bienestar integral de los trabajadores y fortalecer la cultura organizacional en torno a la seguridad y sostenibilidad.</li>
+              </ul>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">¿Competencias Profesionales?</button>
+          <div class="faq-answer">
+            Los egresados de esta maestría adquieren habilidades que les permiten desempeñarse con excelencia en el ámbito de la seguridad y salud laboral:
+              <ul>
+                  <li><strong>Gestión de riesgos avanzados: </strong>Identificar, evaluar y mitigar riesgos laborales en entornos complejos.</li>
+                  <li><strong>Implementación de tecnologías: </strong>Identificar, evaluar y mitigar riesgos laborales en entornos complejos.</li>
+                  <li><strong>Planificación estratégica: </strong>Identificar, evaluar y mitigar riesgos laborales en entornos complejos.</li>
+                  <li><strong>Gestión de emergencias: </strong>Identificar, evaluar y mitigar riesgos laborales en entornos complejos.</li>
+                  <li><strong>Formación y liderazgo: </strong>Capacitar a equipos multidisciplinarios en temas de seguridad y salud, fortaleciendo la cultura organizacional.</li>
+              </ul>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">¿Puedes aplicar siendo ingeniero o licenciado?</button>
+          <div class="faq-answer">
+              Los postulantes deben contar con un título de tercer nivel registrado en la SENESCYT. Este título puede ser:
+              <ul>
+                  <li>Tecnológico Superior.</li>
+                  <li>Ingeniero.</li>
+                  <li>Licenciado.</li>
+                  <li>Otras profesiones relacionadas que deseen especializarse en seguridad industrial y salud en el trabajo.</li>
+              </ul>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">¿Es cierto que una maestría tecnológica y una maestría universitaria tienen el mismo nivel académico?</button>
+          <div class="faq-answer">
+              Sí, según la SENESCYT (Secretaría de Educación Superior, Ciencia, Tecnología e Innovación de Ecuador), las maestrías tecnológicas y las maestrías universitarias tienen el mismo nivel académico. Ambas son consideradas estudios de cuarto nivel y tienen la misma validez dentro del Sistema Nacional de Educación Superior.
+          </div>
+        </div>
+      </div>
+    </section>
+
+
     <section class="">
         <div class="container-requisitos">
           <h1 class="main-title-requisitos">Empieza Tu Viaje: Requisitos De Matriculación</h1>
@@ -450,4 +517,24 @@
         </div>
       </footer>
 </body>
+
+<script>
+  document.querySelectorAll('.faq-question').forEach((question) => {
+ question.addEventListener('click', () => {
+   const answer = question.nextElementSibling;
+
+   // Toggle visibility of the answer
+   if (answer.style.maxHeight) {
+     answer.style.maxHeight = null;
+   } else {
+     // Collapse other answers
+     document.querySelectorAll('.faq-answer').forEach((item) => {
+       item.style.maxHeight = null;
+     });
+     // Expand the current answer
+     answer.style.maxHeight = answer.scrollHeight + 'px';
+   }
+ });
+});
+</script>
 </html>

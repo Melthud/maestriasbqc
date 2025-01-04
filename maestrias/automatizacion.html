@@ -351,6 +351,63 @@
   </section>
 
 
+
+  <section class="faq-section" style="padding-top: 50px;">
+    <h1 class="main-title-requisitos">Preguntas Frecuentes</h1>
+    <div class="faq">
+      <div class="faq-item">
+        <button class="faq-question">¿Por qué estudiar esta maestría?</button>
+        <div class="faq-answer">
+          La Maestría Tecnológica en Herramientas de Automatización y Control es un programa avanzado diseñado para formar profesionales capaces de liderar proyectos de automatización industrial, integrar tecnologías emergentes y optimizar procesos productivos. En Ecuador, esta carrera es clave para impulsar la transformación digital de las industrias, promoviendo la innovación tecnológica y el incremento de la competitividad en sectores estratégicos como manufactura, energía, minería y transporte.
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">¿Para qué estudiar esta maestría?</button>
+        <div class="faq-answer">
+            <ul>
+                <li>Diseñar, implementar y gestionar sistemas de automatización en diferentes entornos industriales.</li>
+                <li>Integrar tecnologías avanzadas como Internet de las Cosas (IoT), inteligencia artificial (IA) y robótica en procesos de producción.</li>
+                <li>Optimizar procesos industriales mediante el uso de herramientas de control avanzado.</li>
+                <li>Contribuir al desarrollo tecnológico de las empresas, mejorando la eficiencia, sostenibilidad y seguridad en sus operaciones.</li>
+                <li>Liderar proyectos de modernización industrial a nivel nacional e internacional.</li>
+            </ul>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">¿Competencias Profesionales?</button>
+        <div class="faq-answer">
+          Liderar proyectos de modernización industrial a nivel nacional e internacional.
+            <ul>
+                <li><strong>Automatización de procesos: </strong>Diseñar e implementar sistemas automáticos que optimicen la producción y reduzcan costos operativos.</li>
+                <li><strong>Integración tecnológica: </strong>Aplicar tecnologías emergentes como PLCs, SCADA, IoT y sistemas ciberfísicos para mejorar el desempeño industrial.</li>
+                <li><strong>Control avanzado: </strong>Aplicar tecnologías emergentes como PLCs, SCADA, IoT y sistemas ciberfísicos para mejorar el desempeño industrial.</li>
+                <li><strong>Gestión de proyectos tecnológicos: </strong>Aplicar tecnologías emergentes como PLCs, SCADA, IoT y sistemas ciberfísicos para mejorar el desempeño industrial.</li>
+                <li><strong>Mantenimiento predictivo: </strong>Implementar sistemas de monitoreo para prever fallas y asegurar la continuidad operativa.</li>
+            </ul>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">¿Puedes aplicar siendo ingeniero o licenciado?</button>
+        <div class="faq-answer">
+            Los postulantes deben contar con un título de tercer nivel registrado en la SENESCYT. Este título puede ser:
+            <ul>
+                <li>Implementar sistemas de monitoreo para prever fallas y asegurar la continuidad operativa.</li>
+                <li>Ingeniería en Electricidad, Electrónica, Mecánica, Sistemas o ramas afines.</li>
+                <li>Licenciatura en carreras relacionadas con tecnología e innovación industrial.</li>
+            </ul>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">¿Es cierto que una maestría tecnológica y una maestría universitaria tienen el mismo nivel académico?</button>
+        <div class="faq-answer">
+            Sí, según la SENESCYT (Secretaría de Educación Superior, Ciencia, Tecnología e Innovación de Ecuador), las maestrías tecnológicas y las maestrías universitarias tienen el mismo nivel académico. Ambas son consideradas estudios de cuarto nivel y tienen la misma validez dentro del Sistema Nacional de Educación Superior.
+        </div>
+      </div>
+    </div>
+  </section>
+
+
     <section class="">
         <div class="container-requisitos">
           <h1 class="main-title-requisitos">Empieza Tu Viaje: Requisitos De Matriculación</h1>
@@ -419,4 +476,23 @@
         </div>
       </footer>
 </body>
+<script>
+  document.querySelectorAll('.faq-question').forEach((question) => {
+ question.addEventListener('click', () => {
+   const answer = question.nextElementSibling;
+
+   // Toggle visibility of the answer
+   if (answer.style.maxHeight) {
+     answer.style.maxHeight = null;
+   } else {
+     // Collapse other answers
+     document.querySelectorAll('.faq-answer').forEach((item) => {
+       item.style.maxHeight = null;
+     });
+     // Expand the current answer
+     answer.style.maxHeight = answer.scrollHeight + 'px';
+   }
+ });
+});
+</script>
 </html>
