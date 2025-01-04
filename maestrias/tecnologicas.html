@@ -94,7 +94,7 @@
         
             </div>
             <div class="image-content-porque-elegirnos">
-                <img src="../img/demas/herramientasdocencia.jpeg" alt="Descripción de la imagen">
+                <img src="../img/demas/docenciatec.jpg" alt="Descripción de la imagen">
             </div>
         </div>
     </section>
@@ -446,6 +446,32 @@
         </div>
     </section>
 
+
+    <section class="faq-section" style="padding-top: 50px;">
+        <h2 style="text-align: center;">Preguntas Frecuentes</h2>
+        <div class="faq">
+          <div class="faq-item">
+            <button class="faq-question">¿Cuál es el horario de atención?</button>
+            <div class="faq-answer" style="padding-top: 20px;">
+              Nuestro horario de atención es de lunes a viernes, de 9:00 a 18:00.
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">¿Ofrecen descuentos por volumen?</button>
+            <div class="faq-answer">
+              Sí, ofrecemos descuentos especiales para compras en grandes cantidades.
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">¿Puedo cambiar un producto después de comprarlo?</button>
+            <div class="faq-answer">
+              Sí, puedes cambiar productos dentro de los primeros 30 días con tu comprobante de compra.
+            </div>
+          </div>
+        </div>
+      </section>
+
+
     <section class="">
         <div class="container-requisitos">
           <h1 class="main-title-requisitos">Empieza Tu Viaje: Requisitos De Matriculación</h1>
@@ -515,4 +541,23 @@
         </div>
       </footer>
 </body>
+<script>
+   document.querySelectorAll('.faq-question').forEach((question) => {
+  question.addEventListener('click', () => {
+    const answer = question.nextElementSibling;
+
+    // Toggle visibility of the answer
+    if (answer.style.maxHeight) {
+      answer.style.maxHeight = null;
+    } else {
+      // Collapse other answers
+      document.querySelectorAll('.faq-answer').forEach((item) => {
+        item.style.maxHeight = null;
+      });
+      // Expand the current answer
+      answer.style.maxHeight = answer.scrollHeight + 'px';
+    }
+  });
+});
+</script>
 </html>
